@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <title>Kinjal - Portfolio </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+  body{
+    background-color: rgb(14, 14, 56);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color:rgb(23, 23, 102) ;
+    color: white;
+
+  }
+  nav ul{
+display: flex;
+justify-content: center;
+  }  
+  
+  nav ul li{
+    list-style: none;
+    margin:  50px;
+  }
+    
+  nav ul li a{
+    text-decoration: none;
+   color: white;
+  }
+  nav ul li a:hover{
+    color: rgb(85, 85, 126);
+    font-size: 1.1rem;
+  }
+  .left{
+    font-size: 2rem;
+  }
+  .left a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  .left a:hover{
+ 
+    color:rgb(85, 85, 126);
+   font-size: 2.2rem;
+  }
+
+  .firstsection
+  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+  }
+  .firstsection >div
+  {
+   width: 30%;
+
+  }
+  .leftsection{
+   font-size: 3rem;
+  margin: 30px 0;
+
+  }  
+  .rightsection img{
+    width: 100%;
+
+  }
+  .purple
+  {
+    color: blueviolet;
+  }
+  #element
+  {
+    color: blueviolet;
+  
+}
+.secondsection{
+  max-width:80vw;
+margin: auto;
+
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+   <div class="left">
+   <a href="task-4.html"> Kinjal's Portfolio</a>
+   </div>
+<div class="right">
+    <ul>
+       <li><a href="home.html">Home</a></li>
+     <li><a href="about.html">About Me</a></li>
+
+    </ul>
+</div>
+        </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Kinjal </span> 
+          <div> and I am a passionate</div>
+          
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="new.png" alt="Developers">
+        </div>
+      </section>
+   
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web Designer' ],
+        typeSpeed: 60,
+      });
+    </script>
+
+    
+</body>
+</html>

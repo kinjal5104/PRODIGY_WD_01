@@ -1,0 +1,137 @@
+/* Your CSS styles go here */
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('https://source.unsplash.com/1920x1080/?travel') center/cover no-repeat;
+    color: #fff;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #fff;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff5733;
+  }
+  
+  .burger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger-icon {
+      display: block;
+    }
+  }
+  
+  .section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(232, 226, 226, 0.5);
+  }
+  
+  .destinations, .blog, .contact {
+    background: rgba(237, 234, 234, 0.8);
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  /* Add more specific styling for your destination, blog, and contact sections */
+  /* Add these styles to increase navbar font size */
+nav {
+    float: right;
+    font-size: 25px;
+  }
+  
+  /* Rest of your existing styles */
+  /* Your existing styles remain unchanged */
+
+/* Add these styles to increase navbar font size */
+nav {
+    float: right;
+    font-size: 25px;
+  }
+  
